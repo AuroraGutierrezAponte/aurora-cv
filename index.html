@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi CV - Aurora Gutiérrez Aponte</title>
+    <title>CV - Aurora del Valle Gutiérrez Aponte</title>
     <style>
         * {
             margin: 0;
@@ -14,114 +14,509 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             color: #333;
-            background-color: #f4f4f4;
+            background-color: #f5f5f5;
         }
         .container {
-            max-width: 900px;
+            max-width: 1000px;
             margin: 0 auto;
             background-color: white;
             padding: 40px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
         }
         header {
             text-align: center;
-            border-bottom: 3px solid #007bff;
-            padding-bottom: 20px;
+            border-bottom: 4px solid #007bff;
+            padding-bottom: 25px;
             margin-bottom: 30px;
         }
         h1 {
             color: #007bff;
-            font-size: 2.5em;
+            font-size: 2.2em;
+            margin-bottom: 8px;
+        }
+        .subtitle {
+            font-size: 1.1em;
+            color: #555;
             margin-bottom: 10px;
+            font-weight: 500;
         }
         .contact-info {
-            font-size: 0.95em;
+            font-size: 0.9em;
             color: #666;
+            margin-top: 10px;
+        }
+        .contact-info p {
+            margin: 4px 0;
         }
         h2 {
             color: #007bff;
-            border-bottom: 2px solid #007bff;
+            border-bottom: 3px solid #007bff;
             padding-bottom: 10px;
-            margin-top: 30px;
-            margin-bottom: 15px;
+            margin-top: 35px;
+            margin-bottom: 20px;
+            font-size: 1.4em;
+        }
+        h3 {
+            color: #0056b3;
+            margin-top: 20px;
+            margin-bottom: 12px;
+            font-size: 1.1em;
+        }
+        .section-divider {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        .section-divider > div {
+            flex: 1;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        thead {
+            background-color: #f0f0f0;
+        }
+        th {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+            font-weight: bold;
+            color: #333;
+        }
+        td {
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
         }
         .entry {
             margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
+        }
+        .entry:last-child {
+            border-bottom: none;
+        }
+        .entry-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 5px;
         }
         .entry-title {
             font-weight: bold;
             color: #333;
+            font-size: 1em;
         }
-        .entry-subtitle {
+        .entry-dates {
             color: #666;
-            font-style: italic;
+            font-size: 0.9em;
+        }
+        .entry-company {
+            color: #0056b3;
+            font-weight: 600;
+            margin-bottom: 5px;
         }
         .entry-description {
-            margin-top: 5px;
+            margin-top: 8px;
+            color: #555;
+            margin-left: 15px;
+        }
+        .entry-description ul {
+            list-style-position: inside;
+            padding-left: 0;
+        }
+        .entry-description li {
+            margin-bottom: 6px;
+            text-align: justify;
+        }
+        .competency-box {
+            background-color: #f9f9f9;
+            border-left: 4px solid #007bff;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+        .competency-title {
+            font-weight: bold;
+            color: #0056b3;
+            margin-bottom: 8px;
+        }
+        .competency-content {
+            font-size: 0.95em;
+            line-height: 1.5;
             color: #555;
         }
         ul {
             margin-left: 20px;
         }
         li {
-            margin-bottom: 8px;
+            margin-bottom: 6px;
+            text-align: justify;
+        }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+        .skill-item {
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 4px;
+            color: #333;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 2px solid #eee;
+            font-size: 0.9em;
+            color: #666;
+        }
+        @media print {
+            body { background-color: white; }
+            .container { box-shadow: none; }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>Aurora Gutiérrez Aponte</h1>
+            <h1>AURORA DEL VALLE GUTIÉRREZ APONTE</h1>
+            <div class="subtitle">VENTAS · DOCENCIA · ADMINISTRACIÓN</div>
             <div class="contact-info">
-                <p>📧 Email: aurora@example.com | 📱 Teléfono: +34 XXX XXX XXX</p>
-                <p>📍 Ubicación: España</p>
+                <p>📍 Santa Cruz de Tenerife | 📞 +34 640 823 288</p>
+                <p>✉ avga08@gmail.com | 🔗 linkedin.com/in/auroradelvallegutierrezaponte</p>
             </div>
         </header>
 
         <section>
-            <h2>Perfil Profesional</h2>
-            <p>Descripción breve sobre ti y tu experiencia profesional. Puedes añadir tus objetivos y habilidades principales.</p>
+            <h2>🎓 FORMACIÓN</h2>
+            
+            <h3>FORMACIÓN REGLADA</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>AÑO</th>
+                        <th>TITULACIÓN / CERTIFICACIÓN</th>
+                        <th>ENTIDAD</th>
+                        <th>HORAS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2020</td>
+                        <td>Formador de Teleformadores</td>
+                        <td>Servicio Canario de Empleo</td>
+                        <td>210 h</td>
+                    </tr>
+                    <tr>
+                        <td>2018</td>
+                        <td>Administración 3.0</td>
+                        <td>Servicio Canario de Empleo</td>
+                        <td>100 h</td>
+                    </tr>
+                    <tr>
+                        <td>2017</td>
+                        <td>Cert. Profesionalidad: Gestión de Pisos y Limpieza en Alojamientos (Nivel 3)</td>
+                        <td>Servicio Canario de Empleo</td>
+                        <td>480 h</td>
+                    </tr>
+                    <tr>
+                        <td>2017</td>
+                        <td>Curso de Operaciones Básicas de Cocina</td>
+                        <td>Servicio Canario de Empleo</td>
+                        <td>150 h</td>
+                    </tr>
+                    <tr>
+                        <td>2012</td>
+                        <td>Licenciada en Relaciones Públicas</td>
+                        <td>Escuela Univ. de Protocolo · Caracas, Venezuela</td>
+                        <td>—</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>FORMACIÓN COMPLEMENTARIA</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>AÑO</th>
+                        <th>TITULACIÓN / CERTIFICACIÓN</th>
+                        <th>ENTIDAD</th>
+                        <th>HORAS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>May 2026</td>
+                        <td>Jornadas sobre Vestimenta y Etiqueta</td>
+                        <td>Asoc. Española de Protocolo · S/C Tenerife</td>
+                        <td>4 h</td>
+                    </tr>
+                    <tr>
+                        <td>Oct 2024</td>
+                        <td>Operaciones de Venta</td>
+                        <td>ASAJA</td>
+                        <td>160 h</td>
+                    </tr>
+                    <tr>
+                        <td>Mar 2024</td>
+                        <td>Higiene Alimentaria y Manipulador de Alimentos</td>
+                        <td>TIC Canarias Formación y Consultoría</td>
+                        <td>10 h</td>
+                    </tr>
+                    <tr>
+                        <td>Nov 2020</td>
+                        <td>Orientación Laboral y Promoción de la Calidad en la FPE</td>
+                        <td>Servicio Canario de Empleo</td>
+                        <td>30 h</td>
+                    </tr>
+                    <tr>
+                        <td>Nov 2020</td>
+                        <td>Orientación Laboral y PCFPE</td>
+                        <td>Cruz Roja Española</td>
+                        <td>20 h</td>
+                    </tr>
+                    <tr>
+                        <td>Oct 2020</td>
+                        <td>Slidecasting</td>
+                        <td>INTEFF</td>
+                        <td>20 h</td>
+                    </tr>
+                    <tr>
+                        <td>Sep 2020</td>
+                        <td>Educar en Igualdad</td>
+                        <td>INTEFF</td>
+                        <td>20 h</td>
+                    </tr>
+                    <tr>
+                        <td>Sep 2020</td>
+                        <td>Ciberacoso</td>
+                        <td>INTEFF</td>
+                        <td>20 h</td>
+                    </tr>
+                    <tr>
+                        <td>Ago 2020</td>
+                        <td>Taller de Manejo del Estrés</td>
+                        <td>Cruz Roja Española</td>
+                        <td>8 h</td>
+                    </tr>
+                    <tr>
+                        <td>Jul 2018</td>
+                        <td>Inglés: Atención al Cliente</td>
+                        <td>Fundación Don Bosco</td>
+                        <td>60 h</td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
 
         <section>
-            <h2>Experiencia Profesional</h2>
+            <h2>💼 EXPERIENCIA LABORAL</h2>
+            
+            <h3>📍 TENERIFE</h3>
+            
             <div class="entry">
-                <div class="entry-title">Cargo / Puesto</div>
-                <div class="entry-subtitle">Empresa | Período (Ej: 2023 - Presente)</div>
+                <div class="entry-header">
+                    <div>
+                        <div class="entry-title">Asesora de Ventas</div>
+                        <div class="entry-company">Thermomix (Autónoma)</div>
+                    </div>
+                    <div class="entry-dates">Dic 2024 – Actualidad</div>
+                </div>
                 <div class="entry-description">
-                    Descripción de tus responsabilidades y logros.
+                    <ul>
+                        <li>Asesoramiento comercial personalizado, identificando necesidades del cliente y adaptando la propuesta de valor.</li>
+                        <li>Planificación y gestión autónoma de visitas comerciales y cartera de clientes activos.</li>
+                        <li>Presentación y demostración del producto en entornos domésticos y eventos de grupo.</li>
+                        <li>Negociación y cierre de ventas transmitiendo confianza, entusiasmo y argumentación técnica.</li>
+                        <li>Gestión de postventa y seguimiento de clientes para garantizar satisfacción y fidelización.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="entry">
+                <div class="entry-header">
+                    <div>
+                        <div class="entry-title">Formadora (Autónoma)</div>
+                        <div class="entry-company">TIC Canarias Formación y Consultoría</div>
+                    </div>
+                    <div class="entry-dates">Ago 2020 – Oct 2022</div>
+                </div>
+                <div class="entry-description">
+                    <ul>
+                        <li>Diseño, planificación e impartición de acciones formativas presenciales y en teleformación.</li>
+                        <li>Formación en Competencias Clave (Niveles II y III) para acceso a Certificados de Profesionalidad.</li>
+                        <li>Refuerzo de competencias lingüísticas y matemáticas para colectivos en riesgo de exclusión sociolaboral.</li>
+                        <li>Elaboración de materiales didácticos propios adaptados al perfil y nivel del alumnado.</li>
+                        <li>Administración de aulas virtuales mediante Moodle y evaluación continua del aprendizaje.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="entry">
+                <div class="entry-header">
+                    <div>
+                        <div class="entry-title">Ayudante de Cocina</div>
+                        <div class="entry-company">Portier Eat Spain, S.L.</div>
+                    </div>
+                    <div class="entry-dates">Ene 2021 – Nov 2021</div>
+                </div>
+                <div class="entry-description">
+                    <ul>
+                        <li>Apoyo en la preparación, elaboración y emplatado bajo la supervisión del jefe de cocina.</li>
+                        <li>Cumplimiento estricto de estándares de higiene alimentaria y normativa APPCC.</li>
+                        <li>Recepción, control y almacenamiento de materias primas, verificando fechas y condiciones.</li>
+                        <li>Colaboración activa con el equipo de cocina durante el servicio.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="entry">
+                <div class="entry-header">
+                    <div>
+                        <div class="entry-title">Ayudante de Cocina (Prácticas)</div>
+                        <div class="entry-company">Bar-Cafetería La Mancha</div>
+                    </div>
+                    <div class="entry-dates">Ago 2019 – Sep 2019</div>
+                </div>
+                <div class="entry-description">
+                    <ul>
+                        <li>Aprendizaje de operaciones básicas de cocina en entorno real de restauración colectiva.</li>
+                        <li>Apoyo en elaboraciones frías y calientes para el servicio de cafetería.</li>
+                        <li>Colaboración en atención al cliente y apoyo en sala durante períodos de alta demanda.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="entry">
+                <div class="entry-header">
+                    <div>
+                        <div class="entry-title">Operaria de Limpieza</div>
+                        <div class="entry-company">Nueva Isla Baja</div>
+                    </div>
+                    <div class="entry-dates">Feb 2017 – Ene 2018</div>
+                </div>
+                <div class="entry-description">
+                    <ul>
+                        <li>Ejecución de tareas de limpieza, desinfección e higienización en instalaciones según protocolos.</li>
+                        <li>Aplicación de técnicas avanzadas con microfibra y productos especializados.</li>
+                        <li>Gestión y clasificación de residuos conforme a la normativa sanitaria y medioambiental.</li>
+                        <li>Cumplimiento riguroso de protocolos de prevención de riesgos laborales.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3>📍 MADRID</h3>
+            
+            <div class="entry">
+                <div class="entry-header">
+                    <div>
+                        <div class="entry-title">Agente Inmobiliaria</div>
+                        <div class="entry-company">Autónoma</div>
+                    </div>
+                    <div class="entry-dates">Jun 2016 – Jul 2016</div>
+                </div>
+                <div class="entry-description">
+                    <ul>
+                        <li>Captación activa de propiedades y clientes interesados en compra, venta o arrendamiento.</li>
+                        <li>Asesoramiento personalizado, gestión de contratos y coordinación de visitas hasta el cierre.</li>
+                        <li>Seguimiento postventa y mantenimiento de relaciones para generar referencias y nuevas oportunidades.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3>📍 VENEZUELA</h3>
+            
+            <div class="entry">
+                <div class="entry-header">
+                    <div>
+                        <div class="entry-title">Secretaria de Dirección</div>
+                        <div class="entry-company">Tabaquera Bigott</div>
+                    </div>
+                    <div class="entry-dates">Mar 1998 – Jun 2009</div>
+                </div>
+                <div class="entry-description">
+                    <ul>
+                        <li>Gestión integral de la agenda del director y coordinación de reuniones de alto nivel.</li>
+                        <li>Redacción, tramitación y archivo de correspondencia oficial y documentación confidencial.</li>
+                        <li>Enlace directo entre la dirección general y los distintos departamentos de la compañía.</li>
+                        <li>Organización de viajes de negocios, eventos corporativos y protocolo de visitas institucionales.</li>
+                    </ul>
                 </div>
             </div>
         </section>
 
         <section>
-            <h2>Educación</h2>
-            <div class="entry">
-                <div class="entry-title">Titulación / Grado</div>
-                <div class="entry-subtitle">Institución Educativa | Año de finalización</div>
-                <div class="entry-description">
-                    Información adicional sobre tu formación.
+            <h2>⭐ COMPETENCIAS PROFESIONALES</h2>
+            
+            <div class="competency-box">
+                <div class="competency-title">1. DOCENCIA Y FORMACIÓN</div>
+                <div class="competency-content">
+                    <strong>Diseño e impartición de formación:</strong> Planifica, desarrolla e imparte acciones formativas presenciales y en teleformación, adaptando contenidos y metodologías al perfil del alumnado. Gestiona grupos heterogéneos, fomentando la participación, la motivación y el aprendizaje significativo. Elabora materiales didácticos propios adaptados a las necesidades del alumnado.
+                    <br><br>
+                    <strong>Competencias Clave y formación para el empleo:</strong> Imparte formación en Competencias Clave (Niveles II y III), preparando al alumnado para el acceso a Certificados de Profesionalidad. Refuerza competencias lingüísticas y matemáticas, promoviendo la inclusión sociolaboral de colectivos en riesgo de exclusión.
+                    <br><br>
+                    <strong>Formación especializada:</strong> Docente especializada en procedimientos de limpieza e higienización profesional en entornos hospitalarios. Formadora certificada (Formador de Teleformadores, 210 h) con experiencia en plataformas e-learning y Moodle.
+                </div>
+            </div>
+
+            <div class="competency-box">
+                <div class="competency-title">2. ASISTENCIA EN COMEDORES ESCOLARES</div>
+                <div class="competency-content">
+                    <strong>Atención y cuidado del alumnado:</strong> Capacidad para supervisar y acompañar a menores durante el tiempo de comedor, garantizando un entorno seguro y respetuoso. Habilidades de comunicación y trato empático con niños y adolescentes, promoviendo hábitos saludables. Experiencia en dinamización grupal y gestión de situaciones de conflicto con criterios de convivencia positiva.
+                    <br><br>
+                    <strong>Higiene, seguridad y protocolos alimentarios:</strong> Conocimiento de normativas de higiene alimentaria y protocolos de limpieza en espacios de uso colectivo. Manejo de técnicas básicas de cocina (150 h) aplicables al entorno de comedor escolar. Prevención de riesgos laborales en entornos con menores y restauración colectiva.
+                    <br><br>
+                    <strong>Organización y trabajo en equipo:</strong> Capacidad organizativa para la coordinación eficiente de tareas durante el servicio de comedor. Actitud proactiva, responsable y orientada al bienestar del alumnado.
+                </div>
+            </div>
+
+            <div class="competency-box">
+                <div class="competency-title">3. VENTAS Y ATENCIÓN COMERCIAL</div>
+                <div class="competency-content">
+                    <strong>Asesoramiento y gestión de clientes:</strong> Asesora a clientes de forma personalizada, identificando sus necesidades y ofreciendo soluciones ajustadas. Desarrolla relaciones comerciales duraderas basadas en la confianza y la escucha activa. Experiencia en fidelización de clientes y seguimiento postventa en entornos de venta directa.
+                    <br><br>
+                    <strong>Habilidades comerciales:</strong> Capacidad de negociación y cierre de ventas, combinando argumentación técnica con orientación al cliente. Gestión de carteras de clientes y planificación de visitas con autonomía y orientación a resultados.
+                </div>
+            </div>
+
+            <div class="competency-box">
+                <div class="competency-title">4. COMPETENCIAS TRANSVERSALES</div>
+                <div class="competency-content">
+                    <strong>Comunicación eficaz:</strong> Transmite información de forma clara, persuasiva y adaptada al interlocutor.
+                    <br><br>
+                    <strong>Organización y planificación:</strong> Gestión eficiente del tiempo y los recursos para el cumplimiento de objetivos.
+                    <br><br>
+                    <strong>Adaptabilidad:</strong> Facilidad para integrarse y rendir en entornos dinámicos y multidisciplinares.
+                    <br><br>
+                    <strong>Compromiso y responsabilidad:</strong> Alto nivel de implicación con orientación continua a la calidad y el resultado.
+                    <br><br>
+                    <strong>Trabajo en equipo:</strong> Colaboración activa con equipos multidisciplinares con iniciativa y respeto.
+                    <br><br>
+                    <strong>Aprendizaje continuo:</strong> Disposición permanente a la formación y actualización.
+                </div>
+            </div>
+
+            <div class="competency-box">
+                <div class="competency-title">5. COMPETENCIAS DIGITALES</div>
+                <div class="competency-content">
+                    <strong>Herramientas y plataformas:</strong>
+                    <ul>
+                        <li>Manejo avanzado de herramientas ofimáticas: Microsoft Word y PowerPoint para documentos y presentaciones.</li>
+                        <li>Diseño gráfico avanzado con Canva: elaboración de materiales visuales para formación y comunicación.</li>
+                        <li>Gestión de entornos e-learning con Moodle: administración de aulas virtuales y seguimiento del alumnado.</li>
+                    </ul>
                 </div>
             </div>
         </section>
 
-        <section>
-            <h2>Habilidades</h2>
-            <ul>
-                <li>HTML & CSS</li>
-                <li>JavaScript</li>
-                <li>Otra habilidad</li>
-                <li>Otra habilidad más</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Idiomas</h2>
-            <ul>
-                <li>Español - Nativo</li>
-                <li>Inglés - Intermedio</li>
-            </ul>
-        </section>
+        <div class="footer">
+            <p>Santa Cruz de Tenerife · +34 640 823 288 · avga08@gmail.com · Carnet de Conducir B · Vehículo propio</p>
+        </div>
     </div>
 </body>
 </html>
