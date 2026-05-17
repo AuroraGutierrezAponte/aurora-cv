@@ -28,6 +28,26 @@
             border-bottom: 4px solid #007bff;
             padding-bottom: 25px;
             margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        .header-photo {
+            flex-shrink: 0;
+        }
+        .header-photo img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 3px solid #007bff;
+            box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+            object-fit: cover;
+        }
+        .header-content {
+            flex: 1;
+            min-width: 250px;
         }
         h1 {
             color: #007bff;
@@ -179,16 +199,33 @@
             body { background-color: white; }
             .container { box-shadow: none; }
         }
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+            .header-content {
+                min-width: auto;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>AURORA DEL VALLE GUTIÉRREZ APONTE</h1>
-            <div class="subtitle">VENTAS · DOCENCIA · ADMINISTRACIÓN</div>
-            <div class="contact-info">
-                <p>📍 Santa Cruz de Tenerife | 📞 +34 640 823 288</p>
-                <p>✉ avga08@gmail.com | 🔗 linkedin.com/in/auroradelvallegutierrezaponte</p>
+            <div class="header-photo">
+                <img src="images/aurora.jpg" alt="Aurora del Valle Gutiérrez Aponte">
+            </div>
+            <div class="header-content">
+                <h1>AURORA DEL VALLE GUTIÉRREZ APONTE</h1>
+                <div class="subtitle">VENTAS · DOCENCIA · ADMINISTRACIÓN</div>
+                <div class="contact-info">
+                    <p>📍 Santa Cruz de Tenerife | 📞 +34 640 823 288</p>
+                    <p>✉ avga08@gmail.com | 🔗 linkedin.com/in/auroradelvallegutierrezaponte</p>
+                </div>
             </div>
         </header>
 
@@ -456,31 +493,31 @@
             <div class="competency-box">
                 <div class="competency-title">1. DOCENCIA Y FORMACIÓN</div>
                 <div class="competency-content">
-                    <strong>Diseño e impartición de formación:</strong> Planifica, desarrolla e imparte acciones formativas presenciales y en teleformación, adaptando contenidos y metodologías al perfil del alumnado. Gestiona grupos heterogéneos, fomentando la participación, la motivación y el aprendizaje significativo. Elabora materiales didácticos propios adaptados a las necesidades del alumnado.
+                    <strong>Diseño e impartición de formación:</strong> Planifica, desarrolla e imparte acciones formativas presenciales y en teleformación, adaptando contenidos y metodologías a diferentes perfiles y niveles educativos. Amplia experiencia en diseño curricular e implementación de programas de formación para el empleo.
                     <br><br>
-                    <strong>Competencias Clave y formación para el empleo:</strong> Imparte formación en Competencias Clave (Niveles II y III), preparando al alumnado para el acceso a Certificados de Profesionalidad. Refuerza competencias lingüísticas y matemáticas, promoviendo la inclusión sociolaboral de colectivos en riesgo de exclusión.
+                    <strong>Competencias Clave y formación para el empleo:</strong> Imparte formación en Competencias Clave (Niveles II y III), preparando al alumnado para el acceso a Certificados de Profesionalidad. Especialista en refuerzo de competencias lingüísticas y matemáticas para colectivos en riesgo de exclusión sociolaboral.
                     <br><br>
-                    <strong>Formación especializada:</strong> Docente especializada en procedimientos de limpieza e higienización profesional en entornos hospitalarios. Formadora certificada (Formador de Teleformadores, 210 h) con experiencia en plataformas e-learning y Moodle.
+                    <strong>Formación especializada:</strong> Docente especializada en procedimientos de limpieza e higienización profesional en entornos hospitalarios. Formadora certificada (Formador de Teleformadores).
                 </div>
             </div>
 
             <div class="competency-box">
                 <div class="competency-title">2. ASISTENCIA EN COMEDORES ESCOLARES</div>
                 <div class="competency-content">
-                    <strong>Atención y cuidado del alumnado:</strong> Capacidad para supervisar y acompañar a menores durante el tiempo de comedor, garantizando un entorno seguro y respetuoso. Habilidades de comunicación y trato empático con niños y adolescentes, promoviendo hábitos saludables. Experiencia en dinamización grupal y gestión de situaciones de conflicto con criterios de convivencia positiva.
+                    <strong>Atención y cuidado del alumnado:</strong> Capacidad para supervisar y acompañar a menores durante el tiempo de comedor, garantizando un entorno seguro y respetuoso. Vigilancia activa, intervención en conflictos y promoción de hábitos saludables.
                     <br><br>
-                    <strong>Higiene, seguridad y protocolos alimentarios:</strong> Conocimiento de normativas de higiene alimentaria y protocolos de limpieza en espacios de uso colectivo. Manejo de técnicas básicas de cocina (150 h) aplicables al entorno de comedor escolar. Prevención de riesgos laborales en entornos con menores y restauración colectiva.
+                    <strong>Higiene, seguridad y protocolos alimentarios:</strong> Conocimiento de normativas de higiene alimentaria y protocolos de limpieza en espacios de uso colectivo. Manejo de dietas especiales y control de alergias/intolerancias.
                     <br><br>
-                    <strong>Organización y trabajo en equipo:</strong> Capacidad organizativa para la coordinación eficiente de tareas durante el servicio de comedor. Actitud proactiva, responsable y orientada al bienestar del alumnado.
+                    <strong>Organización y trabajo en equipo:</strong> Capacidad organizativa para la coordinación eficiente de tareas durante el servicio de comedor. Actitud proactiva, responsable y colaborativa en entornos dinámicos.
                 </div>
             </div>
 
             <div class="competency-box">
                 <div class="competency-title">3. VENTAS Y ATENCIÓN COMERCIAL</div>
                 <div class="competency-content">
-                    <strong>Asesoramiento y gestión de clientes:</strong> Asesora a clientes de forma personalizada, identificando sus necesidades y ofreciendo soluciones ajustadas. Desarrolla relaciones comerciales duraderas basadas en la confianza y la escucha activa. Experiencia en fidelización de clientes y seguimiento postventa en entornos de venta directa.
+                    <strong>Asesoramiento y gestión de clientes:</strong> Asesora a clientes de forma personalizada, identificando sus necesidades y ofreciendo soluciones ajustadas. Desarrolla relaciones duraderas mediante orientación continua a la satisfacción y fidelización.
                     <br><br>
-                    <strong>Habilidades comerciales:</strong> Capacidad de negociación y cierre de ventas, combinando argumentación técnica con orientación al cliente. Gestión de carteras de clientes y planificación de visitas con autonomía y orientación a resultados.
+                    <strong>Habilidades comerciales:</strong> Capacidad de negociación y cierre de ventas, combinando argumentación técnica con orientación al cliente. Gestión de carteras de clientes activos y seguimiento comercial.
                 </div>
             </div>
 
